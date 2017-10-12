@@ -1,0 +1,29 @@
+1507822295973	geckodriver	INFO	geckodriver 0.19.0
+1507822295979	geckodriver	INFO	Listening on 127.0.0.1:33303
+1507822297215	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ShKxl37OnJkP"
+1507822297570	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1507822298393	Marionette	INFO	Enabled via --marionette
+1507822301348	Marionette	INFO	Listening on port 42293
+1507822301452	Marionette	WARN	TLS certificate errors will be ignored for this session
+1507822301533	Marionette	DEBUG	Register listener.js for window 2147483649
+1507822301615	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1507822302344	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1507822302344	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1507822304030	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cnn.com/"
+1507822307635	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483662"
+1507822315413	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cnn.com/"
+1507822338118	geckodriver	INFO	geckodriver 0.19.0
+1507822338126	geckodriver	INFO	Listening on 127.0.0.1:34103
+1507822339330	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JbNTWEX8pvPh"
+1507822339689	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1507822340523	Marionette	INFO	Enabled via --marionette
+1507822343502	Marionette	INFO	Listening on port 46225
+1507822343608	Marionette	WARN	TLS certificate errors will be ignored for this session
+1507822343695	Marionette	DEBUG	Register listener.js for window 2147483649
+1507822343776	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1507822344533	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1507822344534	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1507822346316	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cnn.com/"
+1507822349762	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483660"
+1507822358322	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483683"
+1507822358903	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cnn.com/"
