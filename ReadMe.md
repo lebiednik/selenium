@@ -5,7 +5,18 @@
     https://github.com/mozilla/geckodriver/releases
     from download location
     tar xvzf geckodriver-vX.X.0-linux64.tar.gz
-    sudo cp geckodriver ../../../etc/python/
+    sudo cp geckodriver /etc/python/
+## download the newest chromedriver
+    https://chromedriver.storage.googleapis.com/index.html?path=2.33/
+    from download location
+    unzip chromedriver chromedriver_linux64.zip
+    sudo cp chromedriver /etc/python
+## install chrome
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+    sudo apt-get update
+    sudo apt-get install google-chrome-stable
+
 
 ## from project location
     export PATH=$PATH:/etc/python
