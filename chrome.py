@@ -1,14 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-#import datetime
+import random
 import urllib2
 import os
-import signal
-import random
-
 
 #number of top sites to get max 50 without license
-TOP_N = 50 
+TOP_N = 50
 # Top sites in which country or 'global'
 COUNTRY_CODE = 'US'
 top_sites = []
@@ -30,23 +27,32 @@ for token in tokens:
         site = subtokens[2]
         if len(top_sites) < TOP_N:
             top_sites.append(site)
-#print top_sites
+print top_sites
 
 base = 'http://www.'
+chromedriver = '/etc/python/chromedriver'
+os.environ["webdriver.chrome.driver"] = chromedriver
 while True:
     site = random.choice(top_sites)
     print site
-    driver = webdriver.PhantomJS()
-    driver.get(base+site)
-    driver.service.process.send_signal(signal.SIGTERM)
+    driver = webdriver.Chrome(chromedriver)
+    driver.get(site+url)
     driver.quit()
+    
+
 """
+#Open the sites using Firefox
 for url in top_sites:
-    print url
-    driver = webdriver.PhantomJS()
+    driver = webdriver.Firefox()
     driver.get(base+url)
-    driver.service.process.send_signal(signal.SIGTERM)
+    driver.close()
+
+#Open the sites using Chrome
+chromedriver = '/etc/python/chromedriver'
+os.environ["webdriver.chrome.driver"] = chromedriver
+
+for url in top_sites:
+    driver = webdriver.Chrome(chromedriver)
+    driver.get(base+url)
     driver.quit()
-"""
-
-
+'''
