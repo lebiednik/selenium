@@ -16,7 +16,13 @@
     echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
     sudo apt-get update
     sudo apt-get install google-chrome-stable
-
+## install phantomjs raspberry pi
+    cd /tmp
+    wget https://github.com/aeberhardo/phantomjs-linux-armv6l/archive/master.zip
+    unzip master.zip
+    cd phantomjs-linux-armv6l-master
+    bunzip2 *.bz2 && tar xf *.tar
+    sudo cp phantomjs-1.9.0-linux-armv6l/bin/phantomjs /usr/bin
 
 ## from project location
     export PATH=$PATH:/etc/python
